@@ -1,149 +1,224 @@
 html, body {
-    margin: 0;
-    padding: 0;
-  }
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
   
-  header {
-    background-color: #167a61;
-    position:fixed;
-    width:100%;
-    z-index:5
-  }
+header {
+background-color: #167a61;
+position:fixed;
+width: 100%;
+height: 100px;
+z-index: 5;
+border-bottom: 1px solid black;
+}
+
+/* Logo */
+.logo{
+position: absolute;
+top: 30px;
+left: 50px;
+font-family:'Potta One', cursive;
+} 
+
+/* navbar */
+
+nav {
+margin: 0;
+padding: 20px 0px;
+}
   
-  nav {
-    margin: 0;
-    padding: 20px 0;
-  }
-  
-  nav li {
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    display: inline-block;
-    width:80px;
-   
-  }
-  
-  main {
-    top:80px;
-    text-align: center;
-    position: relative;
-  }
-  
-  main h1 {
-    color: rgb(190, 26, 26);
-    font-family:'Potta One', cursive;
-    font-weight: 700;
-    font-size: 90px;
-    margin-top: 0px;
-    padding-top: 80px;
-    margin-bottom: 80px;
-    text-transform: uppercase;
-  }
-  
-  footer {
-    background-color: #167a61;
-    color: #fff;
-    padding: 30px 0;
-    display: fixed;
+
+ul {
+justify-content: center;
+list-style: none;
+display: flex;
+
+}
+
+li {
+padding: 10px;
+font-family: 'Raleway', sans-serif;
+
+}
+
+/* Social- Media */
+.socials  {
+position: absolute;
+top: 30px;
+right: 50px;
+text-decoration: none;
+
+}
+
+.fa-facebook-f {
+color: #3b5998;
+}
+
+.fa-twitter, .fa-twitter-square {
+  color: #00aced
+}
+
+.fa-google-plus, .fa-google-plus-square {
+  color: #dd4b39
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.icon {
+margin: 10px;
+}
+
+/* Banner */
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+}
     
-  }
+main {
+top:80px;
+text-align: center;
+position: relative;
+}
   
-  footer p {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    font-size: 11px;
-  }
+main h1 {
+color: rgb(190, 26, 26);
+font-family:'Potta One', cursive;
+font-weight: 700;
+font-size: 90px;
+margin-top: 0px;
+padding-top: 80px;
+margin-bottom: 80px;
+text-transform: uppercase;
+}
+
+.jumbotron {
+  height: 800px;
+  background-image:url(./Resources/graffiti-1224873_1920.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  border-style: solid;
+  border-color:  rgb(190, 26, 26);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+ /* Supporting-gallery */
+.btn-default {
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+font-size: 10px;
+letter-spacing: 1.3px;
+padding: 10px 20px;
+text-decoration: none;
+text-transform: uppercase;  
+margin-bottom: 20px;      
+}
   
-  .container {
-    max-width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: center;
-  }
+.supporting {
+margin-top: 20px;
+padding-top: 80px;
+padding-bottom: 100px;
+background-color: #f05454;
+}
   
-  .jumbotron {
-    height: 800px;
-    background-image:url(./Resources/graffiti-1224873_1920.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .btn-main {
-    background-color: #333;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1.3px;
-    padding: 16px 40px;
-    border-style: solid;
-    border-color:  rgb(190, 26, 26);
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  
-  .btn-default {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 10px;
-    letter-spacing: 1.3px;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-transform: uppercase;  
-    margin-bottom: 20px;      
-  }
-  
-  .supporting {
-    margin-top: 20px;
-    padding-top: 80px;
-    padding-bottom: 100px;
-  }
-  
-  .supporting .col {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    display: inline-block;
-    width:200px;
-    height:200px;
+.supporting .col {
+font-family: 'Raleway', sans-serif;
+text-align: center;
+display: inline-block;
+width:200px;
+height:200px;
     
-  }
+}
   
-  .supporting img {
-    height: 32px;
-  }
+.supporting img {
+height: 32px;
+}
   
-  .supporting h2 {
-    font-weight: 600;
-    font-size: 23px;
-    text-transform: uppercase;
-  }
+.supporting h2 {
+font-weight: 600;
+font-size: 23px;
+text-transform: uppercase;
+}
   
-  .supporting p {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 0 20px;
-    margin-bottom: 20px;
-  }
+.supporting p {
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+padding: 0 20px;
+margin-bottom: 20px;
+}
   
-  .supporting a {
-    background-color: white;
-    color: #333333;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 1.3px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 2px solid #333333; 
-  }
-  
+.supporting a {
+background-color: white;
+color: #333333;
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+font-size: 12px;
+letter-spacing: 1.3px;
+text-decoration: none;
+text-transform: uppercase;
+padding: 10px;
+margin-bottom: 10px;
+border: 2px solid #333333; 
+}
+
+
+
+/* Foto-gallery */
+
+.gallery-header {
+font-family:'Potta One', cursive;
+margin-top: 150px;
+text-align: center;
+}
+
+#gallery {
+padding: 8% 10%;
+column-count: 3;
+column-gap: 0;
+}
+
+.portfolio-image {
+width: 100%;
+height: auto;
+border-radius: 15px 15px 15px 15px;
+margin: 5px;
+}
+
+/* Footer */
+
+footer {
+background-color: #167a61;
+border-top: 1px solid black;
+color: #fff;
+padding: 30px 0;
+display: fixed;
+}
+
+footer p {
+font-family: 'Raleway', sans-serif;
+text-transform: uppercase;
+font-size: 11px;
+}
+
+  /* Media queries */
   @media (max-width: 500px) {
     main h1 {
       font-size: 50px;
